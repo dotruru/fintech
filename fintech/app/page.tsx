@@ -113,7 +113,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               className="rounded-full border border-white/25 bg-white/5 px-4 py-2 font-medium text-white transition hover:border-white/40 hover:bg-white/15"
-        >
+            >
               WhatsApp
             </Link>
           </div>
