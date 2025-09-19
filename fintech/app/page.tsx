@@ -96,15 +96,15 @@ export default function Home() {
       </div>
 
       {/* Transparent navbar */}
-      <header className="relative z-10 px-6 pt-10">
-        <nav className="mx-auto flex max-w-5xl items-center justify-between rounded-full border border-white/20 bg-white/10 px-6 py-3 text-[0.75rem] uppercase tracking-[0.18em] text-white/85 backdrop-blur-2xl sm:text-sm">
+      <header className="relative z-10 px-6 pt-[max(10px,env(safe-area-inset-top))]">
+        <nav className="mx-auto flex max-w-5xl items-center justify-between rounded-full border border-white/20 bg-white/10 px-5 py-3 text-[0.8rem] uppercase tracking-[0.18em] text-white/85 backdrop-blur-2xl sm:px-6 sm:text-sm">
           <span className="font-semibold text-white">Fintech Society</span>
           <div className="flex items-center gap-3">
             <Link
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-white/25 bg-white/5 px-4 py-1.5 font-medium text-white transition hover:border-white/40 hover:bg-white/15"
+              className="rounded-full border border-white/25 bg-white/5 px-4 py-2 font-medium text-white transition hover:border-white/40 hover:bg-white/15"
             >
               Instagram
             </Link>
@@ -112,8 +112,8 @@ export default function Home() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full border border-white/25 bg-white/5 px-4 py-1.5 font-medium text-white transition hover:border-white/40 hover:bg-white/15"
-            >
+              className="rounded-full border border-white/25 bg-white/5 px-4 py-2 font-medium text-white transition hover:border-white/40 hover:bg-white/15"
+        >
               WhatsApp
             </Link>
           </div>
@@ -121,7 +121,7 @@ export default function Home() {
       </header>
 
       {/* Main caption that changes through steps */}
-      <main className="relative z-10 flex min-h-[70vh] flex-col items-center justify-center gap-10 px-6 text-center">
+      <main className="relative z-10 flex min-h-[70svh] flex-col items-center justify-center gap-10 px-6 text-center sm:min-h-[70vh]">
         <SplitText
           text={currentText}
           className="text-balance text-[clamp(2.4rem,8.5vw,6.2rem)] font-semibold text-center leading-tight"
